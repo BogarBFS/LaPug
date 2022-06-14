@@ -1,0 +1,46 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+<title>PUG</title>
+</head>
+<body >
+
+
+  <h1>PUG</h1>
+  <p>5 razones para entrar a la PUG.</p>
+
+<img id="album" src="sonriente.jpg">
+<br><br>
+<p id="reasontext">Puedes tener un compañero globo</p>
+ <button onclick="nextslide()"> Siguiente </button>
+ <script>
+ var reasons = [
+    "Lo del compañero globo",
+    "Puedes conocer nuevas personas",
+    "Al inicio no neecesitas hacer un globo por que te damoos los materiales para hacerlo",
+    "Los trajes", "FIN"
+  ];
+  
+  var images = [
+    "bigote.jpg",
+    "compañero.jpg",
+    "fiesta.jpg",
+    "traje.jpg" ,
+    "fin.webp"
+  ];
+  
+  var i = 0;
+  function nextslide() {  
+      document.getElementById("reasontext").innerHTML = reasons[i];
+      document.getElementById("album").src = images[i];
+      i++;
+   
+  }
+  </script>
+
+
+  
+</body>
+</html>
